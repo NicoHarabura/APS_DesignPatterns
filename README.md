@@ -10,7 +10,8 @@ Alunos
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-O que são padrões de projetos
+# O que são padrões de projetos
+
 Padrões de projetos (ou Design Patterns inglês) são soluções gerais para problemas recorrentes durante o desenvolvimento de softwares. Não é um framework ou um código de ouro, mas uma definição de alto nível para resolver problema comum e repetido.
 
 Em 1978 Christopher Alexander, Sara Ishikawa e Murray Silverstein escreveram um livro chamado “A Pattern Language: Towns, Buildings, Construction” e neste livro foram catalogados 253 tipos de problemas, as causas por trás de cada um deles e propondo uma solução padrão para os mesmos.
@@ -18,7 +19,7 @@ Em 1978 Christopher Alexander, Sara Ishikawa e Murray Silverstein escreveram um 
 Mas esses conceitos foram verdadeiramente conhecidos em 1994, quando os engenheiros de software Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides escreveram o livro “Design Patterns: Elements of Reusable Object-Oriented Software”, catalogando 23 padrões que utilizaram ao longo de suas carreiras. Os autores desse livro ficaram conhecidos como Gang of Four (Gangue dos quatro) ou “GoF”. E são os padrões deles que iremos aprofundar.  Mais precisamente 3 padrões: Prototype, Composite e Strategy.
 
 
-Prototype
+# Prototype
 
 Prototype está como um padrão de projeto criação (Creational Design Patterns). A ideia por trás do ‘Protótipo’ é simples: clonar um objeto já existente, gerando um novo objeto a partir dele. Esse novo objeto criado, será alterado de acordo com suas necessidades sem fazer seu código ficar dependente de suas classes.
 
@@ -31,7 +32,7 @@ Vantagens de se usar o Prototype: Clonar objetos sem acoplá-los a suas classes 
 E uma desvantagem seria a complexidade em clonar objetos que possuem referências circulares.
 
 
-Composite
+# Composite
 
 A intenção do Composite é montar uma árvore onde tanto as folhas (objetos individuais) quanto os compostos (grupos de objetos) sejam tratados de maneira igual. O Composto é um padrão de projeto Estrutural. Quando falamos em termos de orientação a objetos, isso significa aplicarmos polimorfismo e assim chamar métodos de um objeto na árvore sem nos preocuparmos se ele é uma folha ou um composto.
 Para isso os objetos em estruturas de árvore representam hierarquias parte-todo, permitindo tratarmos de maneira uniforme objetos individuais e composições de objetos.
@@ -45,7 +46,7 @@ Vantagens desde padrão: Trabalhar com estruturas de árvore complexas mais conv
 Uma desvantagem é a dificuldade em implementar uma interface comum para classes cuja funcionalidade difere muito. Em certos cenários, você precisaria generalizar muito a interface componente, fazendo dela uma interface de difícil compreensão.
 
 
-Strategy
+# Strategy
 
 Talvez o mais popular dos padrões, não por acaso um com a ideia mais simples (obviamente não tirando em nada o mérito de ser usado, muito pelo contrário). O Strategy (Estratégia) é um padrão de projeto Comportamental e ele permite: definir uma família de algoritmos; coloca-los em classes separadas; e fazem com que os objetos deles sejam intercambiáveis.
 
